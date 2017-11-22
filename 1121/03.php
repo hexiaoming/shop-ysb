@@ -27,6 +27,7 @@ function recdir($path) {
     
     while(($row = readdir($dh)) !== false) {
         if($row == '.' || $row == '..') {
+			echo $row.'<br>';
             continue;
         }
 

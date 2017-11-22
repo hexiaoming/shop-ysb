@@ -40,15 +40,20 @@ sum(10) 不会算,难.
 
 
 递归: 5只猴子,每只猴子,摘1颗桃,完成1步工作
-迭代: 1只猴子,这只儿子,摘5颗桃,完成5步工作
+迭代: 1只猴子,这只猴子,摘5颗桃,完成5步工作
 
 
 
 ***/
-
+$j=1;
 function recsum($n) {
+	global $j;
     if($n > 1) {
+		
+		echo '这是第'.$j.'次调用<br>';
+		$j++;
         return $n + recsum($n-1);
+		
     } else {
         return 1;
     }
@@ -58,9 +63,9 @@ function recsum($n) {
 
 /*
 这是一个典型的递归调用,
-在计算出结果前,最多的时候,共有10个函数同时运行.
+在计算出结果前,最多的时候,共有5个函数同时运行.
 */
-echo recsum(10),'<br />';
+echo recsum(5).'<br />';
 
 
 function itsum($n) {
@@ -70,8 +75,6 @@ function itsum($n) {
     
     return $sum;
 }
-
-
 
 
 
