@@ -28,13 +28,11 @@ function mk_dir($path) {
     
     while(!is_dir($path)) {
         // 例 /a/b/c/d 如果不目录,则是我的工作
-		echo '入栈';
-        $demo=array_push($arr,$path); //工作计划入栈
-		
+        array_push($arr,$path); //工作计划入栈
         $path = dirname($path);
     }
 
-    print_r($arr);
+    //print_r($arr);
 
     if(empty($arr)) {
         return true;
