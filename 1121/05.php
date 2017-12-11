@@ -26,7 +26,7 @@ function recdir($path,$lev=1) {
             continue;
         }
 
-        echo '├',str_repeat('─',$lev),$row,'<br />';
+        echo '├'.str_repeat('─',$lev).$row.'<br />';
         
         // 如果$row还是目录 怎么办?              
         if(is_dir($path . '/' .$row)) {

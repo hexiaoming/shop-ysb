@@ -12,7 +12,7 @@ YY频道: 88354001
 ====笔记部分====
 用迭代来找家谱树
 ***/
-
+header("Content-type: text/html; charset=utf-8"); 
 
 $area = array(
 array('id'=>1,'name'=>'安徽','parent'=>0),

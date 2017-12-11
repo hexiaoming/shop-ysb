@@ -1,4 +1,5 @@
 <?php
+header("Content-type: text/html; charset=utf-8"); 
 /****
 燕十八 公益PHP讲堂
 

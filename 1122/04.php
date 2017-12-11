@@ -33,7 +33,7 @@ function mk_dir($path) {
     }
 
     //print_r($arr);
-
+	//[/a/b/c/d,/a/b/c,/a/b,/a]
     if(empty($arr)) {
         return true;
     }

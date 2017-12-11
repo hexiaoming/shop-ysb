@@ -15,7 +15,7 @@ YY频道: 88354001
 
 家谱树的应用 ,如面包屑导航 首页 > 手机类型 > CDMA手机 > 公益PHP > 递归应用
 ***/
-
+header("Content-type: text/html; charset=utf-8"); 
 
 
 $area = array(
